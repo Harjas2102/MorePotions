@@ -13,7 +13,7 @@ public class PotionFactory {
 	String visibleName;
 	ArrayList<String> lore = new ArrayList<String>();
 	ArrayList<PotionEffect> effects = new ArrayList<PotionEffect>();
-	Boolean splash = false;
+	Boolean splash = true;
 	short look = 8193;
 	int amount = 1;
 	
