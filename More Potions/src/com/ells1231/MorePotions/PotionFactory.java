@@ -13,7 +13,7 @@ public class PotionFactory {
 	String visibleName;
 	ArrayList<String> lore = new ArrayList<String>();
 	ArrayList<PotionEffect> effects = new ArrayList<PotionEffect>();
-	Boolean splash = false;
+	Boolean splash = true;
 	short look = 8193;
 	int amount = 1;
 	
@@ -23,7 +23,7 @@ public class PotionFactory {
 		ItemStack potItem = potion.toItemStack(1);
 		PotionMeta meta = (PotionMeta)potItem.getItemMeta();
 		
-		short durability = constructDurability(false, splash, false, look);
+		short durability = constructDurability(true, splash, false, look);
 		potItem.setDurability(durability);
 		
 		for(PotionEffect effect : effects){
